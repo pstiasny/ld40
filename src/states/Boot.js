@@ -3,9 +3,17 @@ import WebFont from 'webfontloader'
 
 export default class extends Phaser.State {
   init () {
-    this.stage.backgroundColor = '#EDEEC9'
+    this.stage.backgroundColor = '#eeeeee'
     this.fontsReady = false
     this.fontsLoaded = this.fontsLoaded.bind(this)
+
+    // scale the game 4x
+    game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;  
+    game.scale.setUserScale(2, 2);
+
+    // enable crisp rendering
+    game.renderer.renderSession.roundPixels = true;  
+    Phaser.Canvas.setImageRenderingCrisp(this.game.canvas)  
   }
 
   preload () {
