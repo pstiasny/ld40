@@ -12,7 +12,7 @@ export default class extends Phaser.State {
             'Press SPACE to start\n' +
             'Press P to adjust pixel scale\n' +
             'Controls:\n' +
-            '  Arrow keys to move. SPACE to jump. SHIFT to attack.',
+            '  Arrow keys to move. SPACE to jump. Z to attack.',
             { fontSize: 12 });
 
         this.restartKey = game.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);

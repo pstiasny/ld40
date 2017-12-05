@@ -39,7 +39,7 @@ export default class extends Phaser.State {
 
         this.cursors = game.input.keyboard.createCursorKeys();
         this.jumpKey = game.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);
-        this.attackKey = game.input.keyboard.addKey(Phaser.KeyCode.SHIFT);
+        this.attackKey = game.input.keyboard.addKey(Phaser.KeyCode.Z);
 
         this.restartKey = game.input.keyboard.addKey(Phaser.KeyCode.R);
         this.restartKey.onDown.add(() => {
